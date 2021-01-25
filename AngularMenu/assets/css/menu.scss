@@ -27,7 +27,7 @@ $fixed-toolbar-height: 64px;
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 100% !important;
         height: 100%;
         bottom: 0;
         z-index: 2;
@@ -40,7 +40,7 @@ $fixed-toolbar-height: 64px;
         z-index: 100;
         width: 100%;
         height: 100%;
-    }
+    }    
 
     .sidebar-background {
         position: absolute;
@@ -79,6 +79,7 @@ $fixed-toolbar-height: 64px;
         padding: 15px 0;
         position: relative;
         margin-bottom: 5px;
+        text-align: center;
 
         .logo-img {
             width: 35px;
@@ -98,10 +99,10 @@ $fixed-toolbar-height: 64px;
             overflow: hidden;
             text-align: center;
             vertical-align: middle;
-            display: inline;
+            display: inline-block;
         }
 
-        :after {
+        &:after {
             content: "";
             position: absolute;
             bottom: 0;
@@ -109,6 +110,11 @@ $fixed-toolbar-height: 64px;
             height: 1px;
             width: calc(100% - 30px);
             background-color: $menu-font-color;
+        }
+
+        button{
+            float: right;
+            margin-top: 7px;
         }
     }
 
@@ -153,8 +159,12 @@ $fixed-toolbar-height: 64px;
     }
 }
 
-.menu-sidenav.mat-drawer-opened ~ mat-sidenav-content{
-    margin-left: calc(#{$menu-width} + 9px) !important;
+// .menu-sidenav.mat-drawer-opened ~ mat-sidenav-content{
+//     margin-left: calc(#{$menu-width} + 9px) !important;
+// }
+
+.custom-toolbar button{
+    outline: 0 !important;
 }
 
 .custom-sidenav-container {
