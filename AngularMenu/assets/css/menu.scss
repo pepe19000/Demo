@@ -143,6 +143,10 @@ $fixed-toolbar-height: 64px;
     .mat-expansion-panel-header{
         padding-left: 31px !important;
         font-size: 16px;
+
+        &:hover{
+            background: transparent !important;
+        }
     }
 
     .mat-expansion-panel-header.mat-expanded{
