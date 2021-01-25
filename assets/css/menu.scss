@@ -100,6 +100,10 @@ $fixed-toolbar-height: 64px;
             text-align: center;
             vertical-align: middle;
             display: inline-block;
+
+            &:focus{
+                outline: 0 !important;
+            }
         }
 
         &:after {
