@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://pepe19000.github.io/Demo/sitemap.xml
